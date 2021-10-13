@@ -1,15 +1,10 @@
-import { StaticImage } from "gatsby-plugin-image";
-import React from "react";
 /** @jsx jsx */
 import { jsx } from "theme-ui";
 import NavBar from "../navbar/navbar";
 import Triangles, { Orientation } from "../triangles/triangles";
-import { useThemeUI } from "@theme-ui/core";
 import "./global.css";
 
 const MainLayout = ({ children }) => {
-  const { theme } = useThemeUI();
-
   return (
     <>
       <div

@@ -1,5 +1,4 @@
 import { StaticImage } from "gatsby-plugin-image";
-import React from "react";
 import MainLayout from "../components/layouts/mainLayout";
 /** @jsx jsx */
 import { jsx } from "theme-ui";

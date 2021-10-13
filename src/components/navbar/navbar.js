@@ -1,13 +1,9 @@
-import React from "react";
 /** @jsx jsx */
 import { jsx } from "theme-ui";
 import { Flex, NavLink } from "@theme-ui/components";
-import { useThemeUI } from "@theme-ui/core";
 import { Link } from "gatsby";
 
 const NavBar = () => {
-  const { theme } = useThemeUI();
-
   return (
     <Flex
       as="nav"

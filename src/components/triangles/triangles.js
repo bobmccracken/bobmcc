@@ -1,5 +1,4 @@
 import { transparentize } from "@theme-ui/color";
-import React from "react";
 /** @jsx jsx */
 import { jsx } from "theme-ui";
 import { useThemeUI } from "@theme-ui/core";
@@ -41,12 +40,6 @@ export class Orientation {
     sizeUnit: "vh",
   };
 }
-
-const getRandomInt = (min, max) => {
-  min = Math.ceil(min);
-  max = Math.floor(max);
-  return Math.floor(Math.random() * (max - min + 1)) + min;
-};
 
 const makeBorder = (orientation, size, color) => ({
   [`border${orientation.value}`]: `${size}${orientation.sizeUnit} solid ${color}`,
