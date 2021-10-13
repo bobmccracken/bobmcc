@@ -1,5 +1,4 @@
-/** @jsx jsx */
-import { jsx } from "theme-ui";
+/** @jsxImportSource theme-ui */
 import { Flex, NavLink } from "@theme-ui/components";
 import { Link } from "gatsby";
 

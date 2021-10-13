@@ -1,4 +1,4 @@
-import React from "react";
+/** @jsxImportSource theme-ui */
 import MainLayout from "../components/layouts/mainLayout";
 
 const ResumePage = () => {

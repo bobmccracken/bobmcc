@@ -1,6 +1,5 @@
+/** @jsxImportSource theme-ui */
 import { transparentize } from "@theme-ui/color";
-/** @jsx jsx */
-import { jsx } from "theme-ui";
 import { useThemeUI } from "@theme-ui/core";
 
 export class Orientation {

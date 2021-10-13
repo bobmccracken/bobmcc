@@ -1,5 +1,4 @@
-/** @jsx jsx */
-import { jsx } from "theme-ui";
+/** @jsxImportSource theme-ui */
 import NavBar from "../navbar/navbar";
 import Triangles, { Orientation } from "../triangles/triangles";
 import "./global.css";

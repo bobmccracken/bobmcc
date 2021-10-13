@@ -1,7 +1,6 @@
+/** @jsxImportSource theme-ui */
 import { StaticImage } from "gatsby-plugin-image";
 import MainLayout from "../components/layouts/mainLayout";
-/** @jsx jsx */
-import { jsx } from "theme-ui";
 
 const IndexPage = () => {
   return (
