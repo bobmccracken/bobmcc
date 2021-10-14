@@ -19,7 +19,7 @@ const theme = {
   },
   links: {
     nav: {
-      color: "primary",
+      color: "secondary",
       ml: [3, 4],
       fontSize: [2, 3],
       "&:first-child": {
@@ -33,8 +33,8 @@ const theme = {
       textDecoration: "none",
       svg: {
         fill: "primary",
-        width: "24px",
-        height: "24px",
+        width: ["20px", "24px"],
+        height: ["20px", "24px"],
       },
     },
   },

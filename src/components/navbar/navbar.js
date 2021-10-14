@@ -15,76 +15,76 @@ const NavBar = () => {
         p: 4,
       }}
     >
-      <Flex sx={{ flexDirection: "row", alignItems: "center" }}>
-        <StaticImage
-          src="../../images/me.jpg"
-          sx={{
-            width: ["50px", "100px"],
-            height: ["50px", "100px"],
-            minWidth: "50px",
-            borderRadius: "100%",
-            zIndex: 0,
-          }}
-        />
-      </Flex>
       <Flex
         sx={{
           flexDirection: "row",
-          alignItems: "center",
           justifyContent: "space-between",
           flexWrap: "wrap",
-          ml: 2,
-          zIndex: 1,
           flex: 1,
         }}
       >
-        <Flex
-          sx={{
-            mr: 2,
-            flexDirection: "column",
-          }}
-        >
-          <div
+        <Flex sx={{ alignItems: "center" }}>
+          <StaticImage
+            src="../../images/me.jpg"
             sx={{
-              fontWeight: "heading",
-              fontSize: 5,
-              whiteSpace: "nowrap",
+              width: ["50px", "100px"],
+              height: ["50px", "100px"],
+              minWidth: "50px",
+              borderRadius: "100%",
+              zIndex: 0,
+              mr: 2,
+            }}
+          />
+          <Flex
+            sx={{
+              mr: 2,
+              flexDirection: "column",
             }}
           >
-            Bob McCracken
-          </div>
-          <div>
-            <Link
-              href="https://github.com/bobmccracken"
-              sx={{ variant: "links.social" }}
-            >
-              <GitIcon />
-            </Link>
-            <Link
-              href="https://www.linkedin.com/in/robert-mccracken-a2098428"
-              sx={{ variant: "links.social" }}
-            >
-              <LinkedinIcon />
-            </Link>
-            <Link
-              href="https://www.pdga.com/player/75372"
+            <div
               sx={{
-                variant: "links.social",
+                fontWeight: "heading",
+                fontSize: 5,
+                whiteSpace: "nowrap",
               }}
             >
-              <PdgaIcon />
-            </Link>
-          </div>
+              Bob McCracken
+            </div>
+            <div>
+              <Link
+                href="https://github.com/bobmccracken"
+                sx={{ variant: "links.social" }}
+              >
+                <GitIcon />
+              </Link>
+              <Link
+                href="https://www.linkedin.com/in/robert-mccracken-a2098428"
+                sx={{ variant: "links.social" }}
+              >
+                <LinkedinIcon />
+              </Link>
+              <Link
+                href="https://www.pdga.com/player/75372"
+                sx={{
+                  variant: "links.social",
+                }}
+              >
+                <PdgaIcon />
+              </Link>
+            </div>
+          </Flex>
         </Flex>
 
-        <div sx={{ whiteSpace: "nowrap" }}>
-          <NavLink as={Link} to="/">
-            About
-          </NavLink>
-          <NavLink as={Link} to="/resume">
-            Resume
-          </NavLink>
-        </div>
+        <Flex sx={{ alignItems: "center" }}>
+          <div sx={{ whiteSpace: "nowrap" }}>
+            <NavLink as={Link} to="/">
+              About
+            </NavLink>
+            <NavLink as={Link} to="/resume">
+              Resume
+            </NavLink>
+          </div>
+        </Flex>
       </Flex>
     </Flex>
   );
