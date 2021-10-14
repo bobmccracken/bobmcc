@@ -59,5 +59,13 @@ module.exports = {
         preset: "@theme-ui/preset-deep",
       },
     },
+    {
+      resolve: "gatsby-plugin-react-svg",
+      options: {
+        rule: {
+          include: /images/,
+        },
+      },
+    },
   ],
 };

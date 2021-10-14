@@ -26,6 +26,17 @@ const theme = {
         ml: 0,
       },
     },
+    social: {
+      color: "primary",
+      mr: 2,
+      fontSize: [2, 3],
+      textDecoration: "none",
+      svg: {
+        fill: "primary",
+        width: "24px",
+        height: "24px",
+      },
+    },
   },
 };
 
