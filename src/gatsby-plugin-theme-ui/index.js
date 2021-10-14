@@ -22,6 +22,9 @@ const theme = {
       color: "primary",
       ml: [3, 4],
       fontSize: [2, 3],
+      "&:first-child": {
+        ml: 0,
+      },
     },
   },
 };

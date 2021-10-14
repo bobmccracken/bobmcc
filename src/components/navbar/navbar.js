@@ -9,10 +9,7 @@ const NavBar = () => {
       as="nav"
       sx={{
         width: ["100%", "100%", "100%", "1280px"],
-        alignItems: "center",
-        justifyContent: "space-between",
         p: 4,
-        flexWrap: "wrap",
       }}
     >
       <Flex sx={{ flexDirection: "row", alignItems: "center" }}>
@@ -26,26 +23,38 @@ const NavBar = () => {
             zIndex: 0,
           }}
         />
+      </Flex>
+      <Flex
+        sx={{
+          flexDirection: "row",
+          alignItems: "center",
+          justifyContent: "space-between",
+          flexWrap: "wrap",
+          ml: 2,
+          zIndex: 1,
+          flex: 1,
+        }}
+      >
         <div
           sx={{
-            marginLeft: "1rem",
             fontWeight: "heading",
             fontSize: 5,
             whiteSpace: "nowrap",
-            zIndex: 1,
+            mr: 2,
           }}
         >
           Bob McCracken
         </div>
+
+        <div sx={{ whiteSpace: "nowrap" }}>
+          <NavLink as={Link} to="/">
+            About
+          </NavLink>
+          <NavLink as={Link} to="/resume">
+            Resume
+          </NavLink>
+        </div>
       </Flex>
-      <div sx={{ whiteSpace: "nowrap", ml: 2 }}>
-        <NavLink as={Link} to="/">
-          About
-        </NavLink>
-        <NavLink as={Link} to="/resume">
-          Resume
-        </NavLink>
-      </div>
     </Flex>
   );
 };
