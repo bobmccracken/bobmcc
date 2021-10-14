@@ -1,7 +1,23 @@
 /** @jsxImportSource theme-ui */
 import NavBar from "../navbar/navbar";
 import Triangles, { Orientation } from "../triangles/triangles";
+import { keyframes } from "@emotion/react";
 import "./global.css";
+
+const fadeIn = keyframes`
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+`;
+
+const slideIn = keyframes`
+  100% {
+    transform: translateX(0%)
+  }
+`;
 
 const MainLayout = ({ children }) => {
   return (
@@ -30,26 +46,49 @@ const MainLayout = ({ children }) => {
           zIndex: 1,
           overflowX: "clip",
           height: "15vh",
+          animation: `${fadeIn} 0.5s linear`,
         }}
       >
-        <Triangles
-          orientation={Orientation.BOTTOM}
-          size={15}
-          count={50}
-          color="highlight"
-        />
-        <Triangles
-          orientation={Orientation.BOTTOM}
-          size={15}
-          count={10}
-          color="orange"
-        />
-        <Triangles
-          orientation={Orientation.BOTTOM}
-          size={15}
-          count={20}
-          color="gray"
-        />
+        <div
+          sx={{
+            position: "inherit",
+            bottom: "inherit",
+            right: "inherit",
+            left: "inherit",
+            transform: "translateX(-3%)",
+            animation: `${slideIn} 0.5s forwards`,
+          }}
+        >
+          <Triangles
+            orientation={Orientation.BOTTOM}
+            size={15}
+            count={50}
+            color="highlight"
+          />
+        </div>
+        <div
+          sx={{
+            position: "inherit",
+            bottom: "inherit",
+            right: "inherit",
+            left: "inherit",
+            transform: "translateX(3%)",
+            animation: `${slideIn} 0.5s forwards`,
+          }}
+        >
+          <Triangles
+            orientation={Orientation.BOTTOM}
+            size={15}
+            count={20}
+            color="gray"
+          />
+          <Triangles
+            orientation={Orientation.BOTTOM}
+            size={15}
+            count={10}
+            color="orange"
+          />
+        </div>
       </div>
     </>
   );
