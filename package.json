@@ -39,6 +39,7 @@
   },
   "devDependencies": {
     "babel-preset-gatsby": "^1.14.0",
-    "eslint-config-react-app": "^6.0.0"
+    "eslint-config-react-app": "^6.0.0",
+    "gatsby-remark-autolink-headers": "^4.11.0"
   }
 }

@@ -10,6 +10,12 @@ const theme = {
       "-webkit-text-size-adjust": "100%",
       minWidth: "300px",
     },
+    h1: {
+      a: {
+        visibility: "hidden",
+        position: "absolute",
+      },
+    },
   },
   links: {
     nav: {

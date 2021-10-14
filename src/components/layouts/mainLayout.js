@@ -13,6 +13,7 @@ const MainLayout = ({ children }) => {
           position: "relative",
           flexDirection: "column",
           alignItems: "center",
+          paddingBottom: 6,
         }}
       >
         <NavBar />

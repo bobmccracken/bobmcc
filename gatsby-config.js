@@ -14,7 +14,19 @@ module.exports = {
         icon: "src/images/favicon.svg",
       },
     },
-    "gatsby-plugin-mdx",
+    {
+      resolve: "gatsby-plugin-mdx",
+      options: {
+        gatsbyRemarkPlugins: [
+          {
+            resolve: `gatsby-remark-autolink-headers`,
+            options: {
+              elements: ["h1"],
+            },
+          },
+        ],
+      },
+    },
     "gatsby-plugin-sharp",
     "gatsby-transformer-sharp",
     {
@@ -32,6 +44,14 @@ module.exports = {
         path: "./src/pages/",
       },
       __key: "pages",
+    },
+    {
+      resolve: "gatsby-source-filesystem",
+      options: {
+        name: "resume",
+        path: "./src/components/resume/",
+      },
+      __key: "resume",
     },
     {
       resolve: `gatsby-plugin-theme-ui`,
