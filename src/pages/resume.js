@@ -11,12 +11,11 @@ const ResumePage = ({ data }) => {
     <MainLayout>
       <Flex
         sx={{
-          // flexDirection: "column",
           flexWrap: "wrap",
           justifyContent: "flex-start",
         }}
       >
-        <Flex sx={{ marginRight: 6 }}>
+        <Flex sx={{ marginRight: 6, display: [null, "none"] }}>
           <ul>
             <li>one</li>
             <li>two</li>

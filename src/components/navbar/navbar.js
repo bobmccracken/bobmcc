@@ -12,7 +12,8 @@ const NavBar = () => {
       as="nav"
       sx={{
         width: ["100%", "100%", "100%", "1280px"],
-        p: 4,
+        px: 4,
+        pt: 4,
       }}
     >
       <Flex
@@ -75,7 +76,7 @@ const NavBar = () => {
           </Flex>
         </Flex>
 
-        <Flex sx={{ alignItems: "center" }}>
+        <Flex sx={{ alignItems: "center", my: 1 }}>
           <div sx={{ whiteSpace: "nowrap" }}>
             <NavLink as={Link} to="/">
               About
