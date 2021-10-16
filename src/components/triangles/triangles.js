@@ -1,6 +1,7 @@
 /** @jsxImportSource theme-ui */
 import { transparentize } from "@theme-ui/color";
 import { useThemeUI } from "@theme-ui/core";
+import React from "react";
 
 export class Orientation {
   static LEFT = {
@@ -53,7 +54,7 @@ const makeBorder = (orientation, size, color) => ({
 const Triangles = ({
   count = 10,
   size = 50,
-  orientation = Orientation.TOP,
+  orientation = Orientation.BOTTOM,
   color = "primary",
 }) => {
   const pos = 100 / count;
@@ -76,4 +77,4 @@ const Triangles = ({
   ));
 };
 
-export default Triangles;
+export default React.memo(Triangles);
