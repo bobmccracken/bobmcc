@@ -1,4 +1,5 @@
 import { Flex } from "@theme-ui/components";
+import { Themed } from "@theme-ui/mdx";
 import { graphql } from "gatsby";
 import { MDXRenderer } from "gatsby-plugin-mdx";
 import MainLayout from "../components/layouts/mainLayout";
@@ -9,6 +10,7 @@ import MainLayout from "../components/layouts/mainLayout";
 const ResumePage = ({ data }) => {
   return (
     <MainLayout>
+      <Themed.h1>Resume</Themed.h1>
       <Flex
         sx={{
           flexWrap: "wrap",
