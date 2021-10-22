@@ -4,6 +4,7 @@ import { graphql } from "gatsby";
 import { MDXRenderer } from "gatsby-plugin-mdx";
 import { Helmet } from "react-helmet";
 import MainLayout from "../components/layouts/mainLayout";
+const { h1: H1 } = Themed;
 // import { ThemeProvider } from "theme-ui";
 // import theme from "../gatsby-plugin-theme-ui/index";
 // import components from "../components/resume/components";
@@ -12,7 +13,7 @@ const ResumePage = ({ data }) => {
   return (
     <MainLayout>
       <Helmet title="Resume" />
-      <Themed.h1>Resume</Themed.h1>
+      <H1>Resume</H1>
       <Flex
         sx={{
           flexWrap: "wrap",
