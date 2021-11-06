@@ -20,13 +20,6 @@ const ResumePage = ({ data }) => {
           justifyContent: "flex-start",
         }}
       >
-        <Flex sx={{ marginRight: 6, display: [null, "none"] }}>
-          <ul>
-            <li>one</li>
-            <li>two</li>
-            <li>three</li>
-          </ul>
-        </Flex>
         <div sx={{ minWidth: "400px" }}>
           <MDXRenderer>{data?.mdx?.body}</MDXRenderer>
         </div>
