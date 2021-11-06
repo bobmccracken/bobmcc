@@ -2,6 +2,9 @@
 title: Bob McCracken Resume
 ---
 
+import Duration from "./duration.js";
+import { DateTime } from "luxon";
+
 ## Skills
 
 ### Web
@@ -47,13 +50,13 @@ title: Bob McCracken Resume
 
 ### Lead Web Developer @ [Incentivio](https://www.incentivio.com/)
 
-Aug 2019 - Present | 2 yrs 3 mos
+<Duration startDate={DateTime.fromISO("2019-08-01")} endDate={DateTime.now()} />
 
 - React
 - Java
 - Spring Boot
 - Project Lead
-- Managed Overseas Developers
+- Manage Overseas Developers
 
 For most of my time at Incentivio I have served as the Lead Developer on our web
 ordering app. This is a multi-tenant app used by 100s of restaurants and serving
@@ -69,7 +72,10 @@ with the majority of tests written in Cypress.
 
 ### Freelance Software Engineer
 
-Mar 2017 - Aug 2019 | 2 yrs 6 mos
+<Duration
+  startDate={DateTime.fromISO("2017-03-01")}
+  endDate={DateTime.fromISO("2019-08-28")}
+/>
 
 - React
 - React Native
@@ -80,6 +86,11 @@ Mar 2017 - Aug 2019 | 2 yrs 6 mos
 
 Jan 2013 - Mar 2017 | 4 yrs 3 mos
 
+<Duration
+  startDate={DateTime.fromISO("2013-01-01")}
+  endDate={DateTime.fromISO("2017-03-28")}
+/>
+
 - Java
 - Spring Boot
 - Grails
@@ -89,7 +100,13 @@ Jan 2013 - Mar 2017 | 4 yrs 3 mos
 
 Nov 2007 - Oct 2008 | 1 yr
 
+<Duration
+  startDate={DateTime.fromISO("2007-11-01")}
+  endDate={DateTime.fromISO("208-10-28")}
+/>
+
 - Perl
+- Java
 
 ## Education
 
