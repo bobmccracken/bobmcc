@@ -28,9 +28,9 @@ const NavBar = () => {
           <StaticImage
             src="../../images/me.jpg"
             sx={{
-              width: ["50px", "100px"],
-              height: ["50px", "100px"],
-              minWidth: "50px",
+              width: ["70px", "100px"],
+              height: ["70px", "100px"],
+              minWidth: "70px",
               borderRadius: "100%",
               zIndex: 0,
               mr: 2,
