@@ -2,7 +2,6 @@
 import NavBar from "../navbar/navbar";
 import Triangles, { Orientation } from "../triangles/triangles";
 import { keyframes } from "@emotion/react";
-import "./global.css";
 
 const fadeIn = keyframes`
   from {
@@ -63,7 +62,7 @@ const MainLayout = ({ children }) => {
             orientation={Orientation.BOTTOM}
             size={15}
             count={50}
-            color="highlight"
+            color="primary"
           />
         </div>
         <div
@@ -80,7 +79,7 @@ const MainLayout = ({ children }) => {
             orientation={Orientation.BOTTOM}
             size={15}
             count={20}
-            color="gray"
+            color="secondary"
           />
           <Triangles
             orientation={Orientation.BOTTOM}

@@ -1,11 +1,12 @@
 import humanizeDuration from "humanize-duration";
 import { DateTime } from "luxon";
+import { Box } from "theme-ui";
 
 const Duration = ({ startDate, endDate }) => {
   const end = endDate || DateTime.now();
 
   return (
-    <div>
+    <Box sx={{ fontStyle: "italic" }}>
       {startDate.toLocaleString({ month: "short", year: "numeric" })} -{" "}
       {endDate
         ? endDate.toLocaleString({ month: "short", year: "numeric" })
@@ -15,7 +16,7 @@ const Duration = ({ startDate, endDate }) => {
         units: ["y", "mo"],
         round: true,
       })}
-    </div>
+    </Box>
   );
 };
 

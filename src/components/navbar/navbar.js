@@ -1,10 +1,10 @@
 /** @jsxImportSource theme-ui */
-import { Flex, NavLink } from "@theme-ui/components";
-import { Link } from "gatsby";
+import { Flex, NavLink, Link } from "@theme-ui/components";
+import { Link as GLink } from "gatsby";
 import { StaticImage } from "gatsby-plugin-image";
-import GitIcon from "../../images/git.svg";
-import LinkedinIcon from "../../images/linkedin.svg";
-import PdgaIcon from "../../images/pdga.svg";
+import GitIcon from "../../images/svgs/git.svg";
+import LinkedinIcon from "../../images/svgs/linkedin.svg";
+import PdgaIcon from "../../images/svgs/pdga.svg";
 
 const NavBar = () => {
   return (
@@ -35,6 +35,7 @@ const NavBar = () => {
               zIndex: 0,
               mr: 2,
             }}
+            alt="Bob McCracken"
           />
           <Flex
             sx={{
@@ -78,10 +79,10 @@ const NavBar = () => {
 
         <Flex sx={{ alignItems: "center", my: 1 }}>
           <div sx={{ whiteSpace: "nowrap" }}>
-            <NavLink as={Link} to="/">
+            <NavLink as={GLink} to="/">
               About
             </NavLink>
-            <NavLink as={Link} to="/resume">
+            <NavLink as={GLink} to="/resume">
               Resume
             </NavLink>
           </div>

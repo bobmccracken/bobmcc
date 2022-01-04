@@ -1,12 +1,13 @@
 module.exports = {
   siteMetadata: {
-    siteUrl: "https://www.yourdomain.tld",
+    siteUrl: "https://bobmcc.dev",
     title: "bobmcc",
   },
   plugins: [
     "gatsby-plugin-styled-components",
     "gatsby-plugin-image",
     "gatsby-plugin-react-helmet",
+    "gatsby-plugin-react-svg",
     "gatsby-plugin-sitemap",
     {
       resolve: "gatsby-plugin-manifest",
@@ -65,14 +66,6 @@ module.exports = {
       resolve: `gatsby-plugin-theme-ui`,
       options: {
         preset: "@theme-ui/preset-deep",
-      },
-    },
-    {
-      resolve: "gatsby-plugin-react-svg",
-      options: {
-        rule: {
-          include: /images/,
-        },
       },
     },
   ],

@@ -63,6 +63,7 @@ const Triangles = ({
 
   return [...Array(count).keys()].map((num) => (
     <div
+      key={`${count}-${size}-${color}-${num}`}
       sx={{
         ...makeBorder(
           orientation,
