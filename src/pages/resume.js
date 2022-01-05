@@ -10,8 +10,16 @@ import Section from "../components/section/section";
 import Skill from "../components/skill/skill";
 import { skillList } from "../components/skills/skills.constants";
 import Duration from "../components/duration/duration";
+import { useMemo } from "react";
 
-const ResumePage = ({ data }) => {
+const ResumePage = () => {
+  const sortedSkillList = useMemo(() => {
+    const jsIndex = skillList.findIndex((skill) => skill.name === "JavaScript");
+    let sorted = skillList.slice(0, jsIndex + 1).reverse();
+    sorted = sorted.concat(skillList.slice(jsIndex + 1));
+    return sorted;
+  }, []);
+
   return (
     <MainLayout>
       <Helmet title="Resume" />
@@ -19,7 +27,7 @@ const ResumePage = ({ data }) => {
       <Section>
         <Themed.h2>Skills</Themed.h2>
         <Grid width={[146, 180]}>
-          {skillList.map(({ icon, name, url }) => (
+          {sortedSkillList.map(({ icon, name, url }) => (
             <Fade direction="up">
               <Skill
                 icon={
