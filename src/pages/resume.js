@@ -121,7 +121,7 @@ const ResumePage = () => {
             I was a member of the reconciliation team, which meant I used Perl
             to process reports and spreadsheets sent to us by clients and
             partners. That data was then compared against our records. It was
-            pretty boring, in retrospect.
+            pretty dull, in retrospect.
           </Themed.p>
           <Themed.p>
             In 2008 the housing market went to hell and so did many of Stark's
