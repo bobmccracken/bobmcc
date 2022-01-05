@@ -125,7 +125,7 @@ const ResumePage = () => {
           </Themed.p>
           <Themed.p>
             In 2008 the housing market went to hell and so did many of Stark's
-            investments. I was one of ~70% of their workforce laid off.
+            investments. I was one of roughly 70 people laid off.
           </Themed.p>
         </Job>
       </Section>
