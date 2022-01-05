@@ -53,7 +53,7 @@ const IndexPage = ({ data }) => {
           </Themed.p>
         </Section>
         <Section>
-          <Themed.h2>Things I Like</Themed.h2>
+          <Themed.h2>Things I Work With</Themed.h2>
           <Skills />
         </Section>
       </Box>
