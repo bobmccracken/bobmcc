@@ -69,7 +69,8 @@ const ResumePage = () => {
             The application is written in React. Aside from development, I was
             responsible for architecting the application, developing CI/CD
             processes (GitHub Actions), and provisioning cloud based
-            infrastructure (AWS CloudFront).
+            infrastructure (AWS CloudFront). I also manage a small team of
+            overseas developers.
           </Themed.p>
         </Job>
 
