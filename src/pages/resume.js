@@ -22,9 +22,18 @@ const ResumePage = ({ data }) => {
           {skillList.map(({ icon, name, url }) => (
             <Fade direction="up">
               <Skill
-                icon={<Box sx={{ width: "90px", height: "90px" }}>{icon}</Box>}
+                icon={
+                  <Box
+                    sx={{ width: ["50px", "90px"], height: ["50px", "90px"] }}
+                  >
+                    {icon}
+                  </Box>
+                }
                 name={name}
                 url={url}
+                cardSx={{
+                  height: ["120px", "150px"],
+                }}
               />
             </Fade>
           ))}
