@@ -1,26 +1,15 @@
-import { Grid, Link } from "@theme-ui/components";
+/** @jsxImportSource theme-ui */
+import { Box, Grid, Link } from "@theme-ui/components";
 import { Themed } from "@theme-ui/mdx";
 import { DateTime } from "luxon";
+import { Fade } from "react-awesome-reveal";
 import { Helmet } from "react-helmet";
 import MainLayout from "../components/layouts/mainLayout";
-import Job from "../components/resume/job";
-import Skill from "../components/resume/skill/skill";
+import Job from "../components/job/job";
 import Section from "../components/section/section";
-import AWSIcon from "../images/svgs/aws.svg";
-import CssIcon from "../images/svgs/css.svg";
-import CypressIcon from "../images/svgs/cypress.svg";
-import GitIcon from "../images/svgs/git.svg";
-import HtmlIcon from "../images/svgs/html.svg";
-import I18NextIcon from "../images/svgs/i18next.svg";
-import JavaIcon from "../images/svgs/java.svg";
-import JavascriptIcon from "../images/svgs/javascript.svg";
-import MongoIcon from "../images/svgs/mongo.svg";
-import MuiIcon from "../images/svgs/mui.svg";
-import MySQLIcon from "../images/svgs/mysql.svg";
-import ReactIcon from "../images/svgs/react-icon.svg";
-import ReduxIcon from "../images/svgs/redux.svg";
-import SpringBootIcon from "../images/svgs/spring-boot.svg";
-import StyledElementsIcon from "../images/svgs/styled-elements.svg";
+import Skill from "../components/skill/skill";
+import { skillList } from "../components/skills/skills.constants";
+import Duration from "../components/duration/duration";
 
 const ResumePage = ({ data }) => {
   return (
@@ -30,64 +19,17 @@ const ResumePage = ({ data }) => {
       <Section>
         <Themed.h2>Skills</Themed.h2>
         <Grid width={[146, 180]}>
-          <Skill
-            svg={<JavascriptIcon />}
-            name="JavaScript"
-            href="https://www.javascript.com/"
-          />
-          <Skill svg={<ReactIcon />} name="React" href="https://reactjs.org/" />
-          <Skill
-            svg={<ReduxIcon />}
-            name="Redux"
-            href="https://redux.js.org/"
-          />
-          <Skill svg={<MuiIcon />} name="Material UI" href="https://mui.com/" />
-          <Skill
-            svg={<StyledElementsIcon />}
-            name="Styled Components"
-            href="https://www.styled-components.com/"
-          />
-          <Skill
-            svg={<CypressIcon />}
-            name="Cypress"
-            href="https://www.cypress.io/"
-          />
-          <Skill
-            svg={<I18NextIcon />}
-            name="i18next"
-            href="https://www.i18next.com/"
-          />
-          <Skill
-            svg={<HtmlIcon />}
-            name="HTML"
-            href="https://developer.mozilla.org/en-US/docs/Web/HTML"
-          />
-          <Skill
-            svg={<CssIcon />}
-            name="CSS"
-            href="https://developer.mozilla.org/en-US/docs/Web/CSS"
-          />
-          <Skill svg={<JavaIcon />} name="Java" href="https://www.java.com/" />
-          <Skill
-            svg={<SpringBootIcon />}
-            name="Spring Boot"
-            href="https://spring.io/projects/spring-boot"
-          />
-          <Skill
-            svg={<MongoIcon />}
-            name="MongoDB"
-            href="https://www.mongodb.com/"
-          />
-          <Skill
-            svg={<MySQLIcon />}
-            name="MySQL"
-            href="https://www.mysql.com/"
-          />
-          <Skill svg={<GitIcon />} name="Github" href="https://github.com/" />
-          <Skill svg={<AWSIcon />} name="AWS" href="https://aws.amazon.com/" />
+          {skillList.map(({ icon, name, url }) => (
+            <Fade direction="up">
+              <Skill
+                icon={<Box sx={{ width: "90px", height: "90px" }}>{icon}</Box>}
+                name={name}
+                url={url}
+              />
+            </Fade>
+          ))}
         </Grid>
       </Section>
-
       <Section>
         <Themed.h2>Work Experience</Themed.h2>
         <Job
@@ -168,6 +110,26 @@ const ResumePage = ({ data }) => {
             investments. I was one of ~70% of their workforce laid off.
           </Themed.p>
         </Job>
+      </Section>
+      <Section>
+        <Themed.h2>Education</Themed.h2>
+        <Themed.h3 sx={{ color: "secondary" }}>
+          University of Wisconsin - Milwaukee
+        </Themed.h3>
+        <Duration
+          startDate={DateTime.fromObject({ year: 2006 })}
+          endDate={DateTime.fromObject({ year: 2008 })}
+        />
+        <Themed.h4>BS, Computer Science</Themed.h4>
+
+        <Themed.h3 sx={{ color: "secondary" }}>
+          University of Rochester
+        </Themed.h3>
+        <Duration
+          startDate={DateTime.fromObject({ year: 2001 })}
+          endDate={DateTime.fromObject({ year: 2005 })}
+        />
+        <Themed.h4>BA, English</Themed.h4>
       </Section>
     </MainLayout>
   );

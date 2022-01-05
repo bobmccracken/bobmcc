@@ -47,22 +47,6 @@ module.exports = {
       __key: "pages",
     },
     {
-      resolve: "gatsby-source-filesystem",
-      options: {
-        name: "resume",
-        path: "./src/components/resume/",
-      },
-      __key: "resume",
-    },
-    {
-      resolve: "gatsby-source-filesystem",
-      options: {
-        name: "about",
-        path: "./src/components/about/",
-      },
-      __key: "about",
-    },
-    {
       resolve: `gatsby-plugin-theme-ui`,
       options: {
         preset: "@theme-ui/preset-deep",

@@ -3,7 +3,7 @@ import { Box, Link, Text, Themed } from "theme-ui";
 import MainLayout from "../components/layouts/mainLayout";
 import Section from "../components/section/section";
 import Skills from "../components/skills/skills";
-import Age from "../components/about/age";
+import Age from "../components/age/age";
 
 const IndexPage = ({ data }) => {
   return (

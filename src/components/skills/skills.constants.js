@@ -15,11 +15,7 @@ import StyledComponentsIcon from "../../images/svgs/styled-elements.svg";
 
 export const skillList = [
   {
-    icon: (
-      <Box sx={{ width: "50px", height: "50px" }}>
-        <StyledComponentsIcon />
-      </Box>
-    ),
+    icon: <StyledComponentsIcon />,
     name: "Styled Components",
     description: (
       <Box>
@@ -37,11 +33,7 @@ export const skillList = [
   },
 
   {
-    icon: (
-      <Box sx={{ width: "50px", height: "50px" }}>
-        <I18NextIcon />
-      </Box>
-    ),
+    icon: <I18NextIcon />,
     name: "i18next",
     description: (
       <Box>
@@ -53,11 +45,7 @@ export const skillList = [
     url: "https://www.i18next.com",
   },
   {
-    icon: (
-      <Box sx={{ width: "50px", height: "50px" }}>
-        <MuiIcon />
-      </Box>
-    ),
+    icon: <MuiIcon />,
     name: "Material UI",
     description: (
       <Box>
@@ -72,11 +60,7 @@ export const skillList = [
     url: "https://mui.com",
   },
   {
-    icon: (
-      <Box sx={{ width: "50px", height: "50px" }}>
-        <CypressIcon />
-      </Box>
-    ),
+    icon: <CypressIcon />,
     name: "Cypress",
     description: (
       <Box>
@@ -89,11 +73,7 @@ export const skillList = [
     url: "https://www.cypress.io",
   },
   {
-    icon: (
-      <Box sx={{ width: "50px", height: "50px" }}>
-        <ReduxIcon />
-      </Box>
-    ),
+    icon: <ReduxIcon />,
     name: "Redux",
     description: (
       <Box>
@@ -108,11 +88,7 @@ export const skillList = [
     url: "https://redux.js.org",
   },
   {
-    icon: (
-      <Box sx={{ width: "50px", height: "50px" }}>
-        <ReactIcon />
-      </Box>
-    ),
+    icon: <ReactIcon />,
     name: "React",
     description: (
       <Box>
@@ -132,11 +108,7 @@ export const skillList = [
     url: "https://reactjs.org",
   },
   {
-    icon: (
-      <Box sx={{ width: "50px", height: "50px" }}>
-        <JavascriptIcon />
-      </Box>
-    ),
+    icon: <JavascriptIcon />,
     name: "JavaScript",
     description: (
       <Box>
@@ -156,11 +128,7 @@ export const skillList = [
   },
 
   {
-    icon: (
-      <Box sx={{ width: "50px", height: "50px" }}>
-        <JavaIcon />
-      </Box>
-    ),
+    icon: <JavaIcon />,
     name: "Java",
     description: (
       <Box>
@@ -174,11 +142,7 @@ export const skillList = [
     url: "https://www.java.com",
   },
   {
-    icon: (
-      <Box sx={{ width: "50px", height: "50px" }}>
-        <SpringBootIcon />
-      </Box>
-    ),
+    icon: <SpringBootIcon />,
     name: "Spring Boot",
     description: (
       <Box>
@@ -192,11 +156,7 @@ export const skillList = [
     url: "https://spring.io/projects/spring-boot",
   },
   {
-    icon: (
-      <Box sx={{ width: "50px", height: "50px" }}>
-        <MongoIcon />
-      </Box>
-    ),
+    icon: <MongoIcon />,
     name: "MongoDB",
     description: (
       <Box>
@@ -210,11 +170,7 @@ export const skillList = [
     url: "https://www.mongodb.com",
   },
   {
-    icon: (
-      <Box sx={{ width: "50px", height: "50px" }}>
-        <MySQLIcon />
-      </Box>
-    ),
+    icon: <MySQLIcon />,
     name: "MySQL",
     description: (
       <Box>
@@ -228,11 +184,7 @@ export const skillList = [
     url: "https://www.mysql.com",
   },
   {
-    icon: (
-      <Box sx={{ width: "50px", height: "50px" }}>
-        <GitIcon />
-      </Box>
-    ),
+    icon: <GitIcon />,
     name: "Github",
     description: (
       <Box>
@@ -250,11 +202,7 @@ export const skillList = [
     url: "https://github.com",
   },
   {
-    icon: (
-      <Box sx={{ width: "50px", height: "50px" }}>
-        <AWSIcon />
-      </Box>
-    ),
+    icon: <AWSIcon />,
     name: "AWS",
     description: (
       <Box>

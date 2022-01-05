@@ -43,7 +43,11 @@ const SkillSwiper = ({ skills, currentSkill, setCurrentSkill }) => {
       >
         {skills.map(({ icon, name }) => (
           <SwiperSlide key={name}>
-            <Skill icon={icon} name={name} cardSx={cardSx} />
+            <Skill
+              icon={<Box sx={{ width: "50px", height: "50px" }}>{icon}</Box>}
+              name={name}
+              cardSx={cardSx}
+            />
           </SwiperSlide>
         ))}
       </Swiper>

@@ -1,7 +1,7 @@
 /** @jsxImportSource theme-ui */
 import { Flex, Box } from "@theme-ui/components";
 import { Themed } from "@theme-ui/mdx";
-import Duration from "./duration";
+import Duration from "../duration/duration";
 
 const Job = ({ title, company, startDate, endDate, children }) => {
   return (
