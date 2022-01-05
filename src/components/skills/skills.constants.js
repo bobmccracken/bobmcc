@@ -62,10 +62,10 @@ export const skillList = [
     description: (
       <Box>
         <Themed.p>
-          There sure are a lot of UI frameworks to choose from nowadays. I think
-          MUI does a great job of keeping itself up to date with new design
-          trends. The React implementation is the most feature rich UI framework
-          I've worked with.
+          There are a lot of UI frameworks to choose from. I think MUI does a
+          great job of keeping itself up to date with new design trends. The
+          React implementation is the most feature rich UI framework I've worked
+          with.
         </Themed.p>
       </Box>
     ),
