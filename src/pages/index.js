@@ -9,7 +9,7 @@ const IndexPage = ({ data }) => {
   return (
     <MainLayout>
       <Helmet title="About" />
-      <Box pb={6}>
+      <Box>
         <Themed.h1>About</Themed.h1>
         <Box>
           <div>

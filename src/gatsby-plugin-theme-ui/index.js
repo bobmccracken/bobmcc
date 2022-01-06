@@ -61,6 +61,16 @@ const theme = {
       },
     },
   },
+  buttons: {
+    link: {
+      color: "primary",
+      background: "none",
+      "&:hover": {
+        textDecoration: "underline",
+        cursor: "pointer",
+      },
+    },
+  },
 };
 
 export default theme;

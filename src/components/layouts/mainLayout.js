@@ -2,6 +2,8 @@
 import NavBar from "../navbar/navbar";
 import Triangles, { Orientation } from "../triangles/triangles";
 import { motion, useTransform, useViewportScroll } from "framer-motion";
+import { Button } from "theme-ui";
+import { openPopupWidget } from "react-calendly";
 
 const MainLayout = ({ children }) => {
   const { scrollYProgress } = useViewportScroll();
@@ -21,9 +23,26 @@ const MainLayout = ({ children }) => {
         }}
       >
         <NavBar />
-        <main sx={{ zIndex: 100, width: ["100%", "100%", "1000px"], p: 4 }}>
+        <main
+          sx={{ zIndex: 100, width: ["100%", "100%", "1000px"], p: 4, mb: 4 }}
+        >
           {children}
         </main>
+        <motion.footer
+          initial={{ translateY: 30, opacity: 0 }}
+          whileInView={{ translateY: 0, opacity: 1 }}
+          transition={{ delay: 0.2, duration: 0.5 }}
+          sx={{ p: 3 }}
+        >
+          <Button
+            variant="link"
+            onClick={() =>
+              openPopupWidget({ url: "https://calendly.com/bobmcc" })
+            }
+          >
+            📆🤙 Let's Talk
+          </Button>
+        </motion.footer>
       </div>
       <div
         sx={{
