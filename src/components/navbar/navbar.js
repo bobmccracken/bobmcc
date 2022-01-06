@@ -82,12 +82,31 @@ const NavBar = () => {
 
         <Flex sx={{ alignItems: "center", my: 1 }}>
           <div sx={{ whiteSpace: "nowrap" }}>
-            <NavLink as={GLink} to="/">
+            <GLink
+              to="/"
+              activeClassName="active"
+              sx={{
+                color: "secondary",
+                textDecoration: "none",
+                "&:hover": { textDecoration: "underline" },
+                "&.active": { textDecoration: "underline" },
+                mr: 3,
+              }}
+            >
               About
-            </NavLink>
-            <NavLink as={GLink} to="/resume">
+            </GLink>
+            <GLink
+              to="/resume/"
+              activeClassName="active"
+              sx={{
+                color: "secondary",
+                textDecoration: "none",
+                "&:hover": { textDecoration: "underline" },
+                "&.active": { textDecoration: "underline" },
+              }}
+            >
               Resume
-            </NavLink>
+            </GLink>
           </div>
         </Flex>
       </Flex>
