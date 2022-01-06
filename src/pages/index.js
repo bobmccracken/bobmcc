@@ -1,11 +1,11 @@
-import { Helmet } from "react-helmet";
+import Helmet from "../components/helmet/helmet";
 import { Box, Link, Text, Themed } from "theme-ui";
 import MainLayout from "../components/layouts/mainLayout";
 import Section from "../components/section/section";
 import Skills from "../components/skills/skills";
 import Age from "../components/age/age";
 
-const IndexPage = ({ data }) => {
+const IndexPage = () => {
   return (
     <MainLayout>
       <Helmet title="About" />

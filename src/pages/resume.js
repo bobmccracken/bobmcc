@@ -3,7 +3,7 @@ import { Box, Grid, Link } from "@theme-ui/components";
 import { Themed } from "@theme-ui/mdx";
 import { DateTime } from "luxon";
 import { Fade } from "react-awesome-reveal";
-import { Helmet } from "react-helmet";
+import Helmet from "../components/helmet/helmet";
 import MainLayout from "../components/layouts/mainLayout";
 import Job from "../components/job/job";
 import Section from "../components/section/section";

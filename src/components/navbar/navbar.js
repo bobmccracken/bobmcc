@@ -56,12 +56,14 @@ const NavBar = () => {
               <Link
                 href="https://github.com/bobmccracken"
                 sx={{ variant: "links.social" }}
+                aria-label="Bob McCracken's GitHub"
               >
                 <GitIcon />
               </Link>
               <Link
                 href="https://www.linkedin.com/in/robert-mccracken-a2098428"
                 sx={{ variant: "links.social" }}
+                aria-label="Bob McCracken's Linked In"
               >
                 <LinkedinIcon />
               </Link>
@@ -70,6 +72,7 @@ const NavBar = () => {
                 sx={{
                   variant: "links.social",
                 }}
+                aria-label="Bob McCracken's PDGA"
               >
                 <PdgaIcon />
               </Link>
