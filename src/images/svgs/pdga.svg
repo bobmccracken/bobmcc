@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 
 <svg width="63.5mm" height="60.099186mm" viewBox="0 0 63.5 60.099186" version="1.1" id="svg8">
-   <g id="layer1" transform="translate(-442.23214,-365.72849)" style="display:inline">
+   <g transform="translate(-442.23214,-365.72849)" style="display:inline">
       <g transform="matrix(0.35277777,0,0,-0.35277777,442.23214,449.07365)" id="g975">
          <g transform="scale(0.1)" id="g977">
             <path id="path993" style="fill:none;stroke:#231f20;stroke-width:2.5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" d="M 1361.89,2164.94 Z" />
