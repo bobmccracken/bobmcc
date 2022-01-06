@@ -28,7 +28,7 @@ const ResumePage = () => {
         <Themed.h2>Skills</Themed.h2>
         <Grid width={[146, 180]}>
           {sortedSkillList.map(({ icon, name, url }) => (
-            <Fade direction="up">
+            <Fade direction="up" key={name}>
               <Skill
                 icon={
                   <Box

@@ -1,24 +1,13 @@
 /** @jsxImportSource theme-ui */
 import NavBar from "../navbar/navbar";
 import Triangles, { Orientation } from "../triangles/triangles";
-import { keyframes } from "@emotion/react";
-
-const fadeIn = keyframes`
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-`;
-
-const slideIn = keyframes`
-  100% {
-    transform: translateX(0%)
-  }
-`;
+import { motion, useTransform, useViewportScroll } from "framer-motion";
 
 const MainLayout = ({ children }) => {
+  const { scrollYProgress } = useViewportScroll();
+  const xRange = useTransform(scrollYProgress, [0, 1], [0, 15]);
+  const xRangeNegative = useTransform(scrollYProgress, [0, 1], [0, -20]);
+
   return (
     <>
       <div
@@ -45,17 +34,18 @@ const MainLayout = ({ children }) => {
           zIndex: 1,
           overflowX: "clip",
           height: "15vh",
-          animation: `${fadeIn} 0.5s linear`,
         }}
       >
-        <div
-          sx={{
+        <motion.div
+          initial={{ translateX: 20, opacity: 0 }}
+          animate={{ translateX: 0, opacity: 1 }}
+          transition={{ duration: 0.7 }}
+          style={{
             position: "inherit",
             bottom: "inherit",
             right: "inherit",
             left: "inherit",
-            transform: "translateX(-3%)",
-            animation: `${slideIn} 0.5s forwards`,
+            translateX: xRange,
           }}
         >
           <Triangles
@@ -64,15 +54,17 @@ const MainLayout = ({ children }) => {
             count={50}
             color="primary"
           />
-        </div>
-        <div
-          sx={{
+        </motion.div>
+        <motion.div
+          initial={{ translateX: -20, opacity: 0 }}
+          animate={{ translateX: 0, opacity: 1 }}
+          transition={{ duration: 0.7 }}
+          style={{
             position: "inherit",
             bottom: "inherit",
             right: "inherit",
             left: "inherit",
-            transform: "translateX(3%)",
-            animation: `${slideIn} 0.5s forwards`,
+            translateX: xRangeNegative,
           }}
         >
           <Triangles
@@ -87,7 +79,7 @@ const MainLayout = ({ children }) => {
             count={10}
             color="orange"
           />
-        </div>
+        </motion.div>
       </div>
     </>
   );
