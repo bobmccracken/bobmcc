@@ -1,5 +1,5 @@
 /** @jsxImportSource theme-ui */
-import { Flex, NavLink, Link } from "@theme-ui/components";
+import { Flex, Link } from "@theme-ui/components";
 import { Link as GLink } from "gatsby";
 import { StaticImage } from "gatsby-plugin-image";
 import GitIcon from "../../images/svgs/git.svg";
