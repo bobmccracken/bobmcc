@@ -38,7 +38,7 @@ const MainLayout = ({ children }) => {
       >
         <motion.div
           initial={{ translateX: 20, opacity: 0 }}
-          animate={{ translateX: 0, opacity: 1 }}
+          animate={{ translateX: 0, opacity: 0.7 }}
           transition={{ duration: 0.7 }}
           style={{
             position: "inherit",
@@ -57,7 +57,7 @@ const MainLayout = ({ children }) => {
         </motion.div>
         <motion.div
           initial={{ translateX: -20, opacity: 0 }}
-          animate={{ translateX: 0, opacity: 1 }}
+          animate={{ translateX: 0, opacity: 0.7 }}
           transition={{ duration: 0.7 }}
           style={{
             position: "inherit",
