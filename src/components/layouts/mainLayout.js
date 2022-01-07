@@ -1,14 +1,22 @@
 /** @jsxImportSource theme-ui */
+import { useEffect } from "react";
 import NavBar from "../navbar/navbar";
 import Triangles, { Orientation } from "../triangles/triangles";
 import { motion, useTransform, useViewportScroll } from "framer-motion";
 import { Button } from "theme-ui";
 import { openPopupWidget } from "react-calendly";
+import { globalHistory } from "@reach/router";
 
 const MainLayout = ({ children }) => {
   const { scrollYProgress } = useViewportScroll();
   const xRange = useTransform(scrollYProgress, [0, 1], [0, 15]);
   const xRangeNegative = useTransform(scrollYProgress, [0, 1], [0, -20]);
+
+  useEffect(() => {
+    return globalHistory.listen(() => {
+      window.analytics.page();
+    });
+  }, []);
 
   return (
     <>
